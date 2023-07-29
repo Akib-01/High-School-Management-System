@@ -34,7 +34,12 @@ export class NoticeController {
   @Get('/get')
   async getAllNotices(): Promise<any> {
     const notices = await this.noticeService.getAllNotices();
-    return { notices };
+    return notices;
+  }
+  @Get('/get/title/:id')
+  async getAllNotice(@Param('id') id: number): Promise<any> {
+    const notices = await this.noticeService.getNoticeById(id);
+    return notices;
   }
 
   @Get('/get/:id')

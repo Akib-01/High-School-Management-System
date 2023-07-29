@@ -38,7 +38,7 @@ export default function Header() {
           >
             {HeaderData.map((item, index) => {
               return (
-                <div className="md:block md:relative md:top-6">
+                <div key={index} className="md:block md:relative md:top-6">
                   <li
                     key={index}
                     className="md:ml-8 md:flex md:items-end hover:text-slate-400 transform hover:scale-105 duration-500 text-xl md:my-0 my-7"
