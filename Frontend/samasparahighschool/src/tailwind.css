@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  @apply px-4 py-1 border  rounded-full text-sm font-semibold  hover:text-white 
+    hover:border-transparent focus:outline-none focus:ring-2  focus:ring-offset-2;
+}
+.btn-green {
+  @apply border-green-400 text-green-500 hover:bg-green-500 focus:ring-green-600;
+}
+.btn-purple {
+  @apply border-purple-400 text-purple-500 hover:bg-purple-500 focus:ring-purple-600;
+}
+@layer utilities {
+  .slider-body {
+    height: 36rem;
+  }
+}
