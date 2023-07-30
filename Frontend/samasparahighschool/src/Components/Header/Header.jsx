@@ -7,8 +7,8 @@ export default function Header() {
   return (
     <>
       <div className="h-20  p-0 m-0 sticky top-0 z-[999999] bg-sky-900 font-Roboto">
-        <div className=" ">
-          <div className="h-16 w-20 rounded-full shadow-md absolute top-2  bg-white transform hover:scale-105 duration-500 ">
+        <div className=" md:pl-[100px] ">
+          <div className="h-16 w-20 rounded-full shadow-md absolute top-2   bg-white transform hover:scale-105 duration-500 ">
             <Link to="/">
               <div className="md:flex items-center justify-between">
                 <img
@@ -32,7 +32,7 @@ export default function Header() {
             <ion-icon name={open ? "close" : "menu"}></ion-icon>
           </div>
           <ul
-            className={` absolute md:flex  text-white md:justify-end md:pr-8 md:static md:z-auto bg-sky-900  w-full  pl-9 transition-all duration-500 ease-in ${
+            className={` absolute md:flex  text-white md:justify-end md:pr-16 md:static md:z-auto bg-sky-900  w-full  pl-9 transition-all duration-500 ease-in ${
               open ? "top-20 " : "top-[-560px]"
             }`}
           >
