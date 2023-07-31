@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
 export default function About() {
   return (
     <>
@@ -16,10 +15,12 @@ export default function About() {
         <div className="flex justify-center items-center mt-8 mb-8">
           <div className="rounded-lg bg-slate-50 p-6 shadow-2xl shadow-slate-700">
             <div className="grid md:grid-cols-3 gap-6">
-              <div className="relative rounded-lg h-[270px] w-[370px] bg-[#0073B7] flex justify-center items-center transform hover:scale-105 duration-500">
-                <p className="text-white text-3xl">Information</p>
-                <div className="absolute inset-0 bg-blue-700 bg-opacity-0 transition duration-300 ease-in-out hover:bg-opacity-30"></div>
-              </div>
+              <Link to={"/about/information"}>
+                <div className="relative rounded-lg h-[270px] w-[370px] bg-[#0073B7] flex justify-center items-center transform hover:scale-105 duration-500">
+                  <p className="text-white text-3xl">Information</p>
+                  <div className="absolute inset-0 bg-blue-700 bg-opacity-0 transition duration-300 ease-in-out hover:bg-opacity-30"></div>
+                </div>
+              </Link>
               <div className="relative rounded-lg h-[270px] w-[370px] bg-[#00C0EF] flex justify-center items-center transform hover:scale-105 duration-500">
                 <p className="text-white text-3xl">Principal's Message</p>
                 <div className="absolute inset-0 bg-blue-700 bg-opacity-0 transition duration-300 ease-in-out hover:bg-opacity-30"></div>

@@ -1,8 +1,7 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import "./App.css";
 import About from "./Components/About/About";
-import Academics from "./Components/Academics/Academics";
-import Activities from "./Components/Activities/Activities";
+import Information from "./Components/About/Information";
 import Administration from "./Components/Administration/Administration";
 import Admission from "./Components/Admission/Admission";
 import Contact from "./Components/Contact/Contact";
@@ -12,7 +11,6 @@ import Home from "./Components/Home/Home";
 import Notice from "./Components/Notice/Notice";
 import Results from "./Components/Result/Results";
 import "./tailwind.css";
-
 function App() {
   return (
     <>
@@ -22,13 +20,12 @@ function App() {
             <Route index element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/administration" element={<Administration />} />
-            <Route path="/academics" element={<Academics />} />
             <Route path="/admission" element={<Admission />} />
-            <Route path="/activities" element={<Activities />} />
             <Route path="/facilities" element={<Facilities />} />
             <Route path="/results" element={<Results />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/notice" element={<Notice />} />
+            <Route path="/about/information" element={<Information />} />
           </Route>
         </Routes>
       </Router>
