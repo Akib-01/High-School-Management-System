@@ -61,7 +61,7 @@ export default function Header() {
                         <Link to={item.path}>{item.title}</Link>
                         {/* Render the sub-menu */}
                         {showSubMenu === index && (
-                          <ul className="absolute top-[76px] left-0 bg-slate-100 w-40 text-black ">
+                          <ul className="absolute top-[76px] left-0 bg-slate-100 w-44 text-black ">
                             {item.subMenu.map((subItem, subIndex) => (
                               <li
                                 key={subIndex}

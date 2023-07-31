@@ -9,8 +9,8 @@ export const HeaderData = [
     subMenu: [
       { title: "Information", path: "/about/information" },
       {
-        title: "Principal's Message",
-        path: "/about/principal-message",
+        title: "Headmaster's Message",
+        path: "/about/message",
       },
       { title: "School Committee", path: "/about/school-committee" },
       {

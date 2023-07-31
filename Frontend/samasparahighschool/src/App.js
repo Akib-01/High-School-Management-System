@@ -1,6 +1,7 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import "./App.css";
 import About from "./Components/About/About";
+import HeadmastersMessage from "./Components/About/Headmaster'sMessage";
 import Information from "./Components/About/Information";
 import Administration from "./Components/Administration/Administration";
 import Admission from "./Components/Admission/Admission";
@@ -26,6 +27,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/notice" element={<Notice />} />
             <Route path="/about/information" element={<Information />} />
+            <Route path="/about/message" element={<HeadmastersMessage />} />
           </Route>
         </Routes>
       </Router>

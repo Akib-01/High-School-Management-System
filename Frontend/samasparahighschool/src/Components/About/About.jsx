@@ -21,10 +21,12 @@ export default function About() {
                   <div className="absolute inset-0 bg-blue-700 bg-opacity-0 transition duration-300 ease-in-out hover:bg-opacity-30"></div>
                 </div>
               </Link>
-              <div className="relative rounded-lg h-[270px] w-[370px] bg-[#00C0EF] flex justify-center items-center transform hover:scale-105 duration-500">
-                <p className="text-white text-3xl">Principal's Message</p>
-                <div className="absolute inset-0 bg-blue-700 bg-opacity-0 transition duration-300 ease-in-out hover:bg-opacity-30"></div>
-              </div>
+              <Link to={"/about/message"}>
+                <div className="relative rounded-lg h-[270px] w-[370px] bg-[#00C0EF] flex justify-center items-center transform hover:scale-105 duration-500">
+                  <p className="text-white text-3xl">Headmaster's Message</p>
+                  <div className="absolute inset-0 bg-blue-700 bg-opacity-0 transition duration-300 ease-in-out hover:bg-opacity-30"></div>
+                </div>
+              </Link>
               <div className="relative rounded-lg h-[270px] w-[370px] bg-[#F56954] flex justify-center items-center transform hover:scale-105 duration-500">
                 <p className="text-white text-3xl">School Committee</p>
                 <div className="absolute inset-0 bg-blue-700 bg-opacity-0 transition duration-300 ease-in-out hover:bg-opacity-30"></div>

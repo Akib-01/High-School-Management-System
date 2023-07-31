@@ -12,7 +12,7 @@ export default function NoticeTitle() {
         setData(
           noticesArray
             .sort((a, b) => new Date(b.date) - new Date(a.date))
-            .slice(0, 10)
+            .slice(0, 5)
         );
       })
       .catch((err) => {
@@ -26,7 +26,7 @@ export default function NoticeTitle() {
           <div key={mapper.id}>
             {console.log("before", mapper.title)}
             <Link to={"/notice"} state={{ id: mapper.id }}>
-              <div className="flex flex-row mapper-center bg-[#FFFFFF] rounded-xl shadow-xl shadow-slate-400 p-3 cursor-pointer">
+              <div className="flex flex-row mapper-center bg-[#FFFFFF] rounded-lg shadow-lg shadow-slate-400 p-3 cursor-pointer">
                 <div className="text-lg text-white font-medium bg-blue-800 rounded-lg p-1 flex-none">
                   {moment(mapper.date).format("DD|MM")}
                 </div>
